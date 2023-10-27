@@ -45,7 +45,7 @@ export default function Page() {
             </>
                 :
             currentData.map(post => (
-                <Card key={post.id} id={post.id} title={post.title} author={post.author} content={post.body} contentPage={'/post/'+post.id}/>
+                <Card key={post.id} id={post.id} title={post.title} author={post.author} content={post.body} contentPage={'dashboard/post/'+post.id}/>
             ))}
             </div>
             {data.length === 0 || currentData.length >= data.length ?
